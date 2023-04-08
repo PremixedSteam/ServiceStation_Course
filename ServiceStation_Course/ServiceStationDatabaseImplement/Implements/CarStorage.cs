@@ -12,7 +12,7 @@ namespace ServiceStationDatabaseImplement.Implements
     {
         public List<CarViewModel> GetFullList()
         {
-            using var context = new STODatabase();
+            using var context = new ServiceStationDatabase();
             return context.Cars.Include(x => x.Spares).ThenInclude(x => x.Spare).ToList()
                     .Select(x => x.GetViewModel).ToList();
         }
@@ -23,7 +23,7 @@ namespace ServiceStationDatabaseImplement.Implements
             {
                 return new();
             }
-            using var context = new STODatabase();
+            using var context = new ServiceStationDatabase();
             return context.Cars.Include(x => x.Spares).ThenInclude(x => x.Spare)
                     .Where(x => x.Brand.Contains(model.Brand)).ToList().Select(x => x.GetViewModel).ToList();
         }
@@ -34,7 +34,7 @@ namespace ServiceStationDatabaseImplement.Implements
             {
                 return null;
             }
-            using var context = new STODatabase();
+            using var context = new ServiceStationDatabase();
             return context.Cars.Include(x => x.Spares).ThenInclude(x => x.Spare)
                 .FirstOrDefault(x =>
                 (!string.IsNullOrEmpty(model.Brand) && x.Brand == model.Brand) ||
@@ -44,7 +44,7 @@ namespace ServiceStationDatabaseImplement.Implements
 
         public CarViewModel? Insert(CarBindingModel model)
         {
-            using var context = new STODatabase();
+            using var context = new ServiceStationDatabase();
             var newCar = Car.Create(context, model);
             if (newCar == null)
             {
@@ -57,7 +57,7 @@ namespace ServiceStationDatabaseImplement.Implements
 
         public CarViewModel? Update(CarBindingModel model)
         {
-            using var context = new STODatabase();
+            using var context = new ServiceStationDatabase();
             using var transaction = context.Database.BeginTransaction();
             try
             {
@@ -81,7 +81,7 @@ namespace ServiceStationDatabaseImplement.Implements
 
         public CarViewModel? Delete(CarBindingModel model)
         {
-            using var context = new STODatabase();
+            using var context = new ServiceStationDatabase();
             var element = context.Cars.Include(x => x.Spares).FirstOrDefault(rec => rec.Id == model.Id);
             if (element != null)
             {

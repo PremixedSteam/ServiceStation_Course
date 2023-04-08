@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\STOContracts\ServiceStationContracts.csproj" />
-    <ProjectReference Include="..\STOBusinessLogic\ServiceStationBusinessLogic.csproj" />
-    <ProjectReference Include="..\STODatabaseImplement\ServiceStationDatabaseImplement.csproj" />
+    <ProjectReference Include="..\ServiceStationBusinessLogic\ServiceStationBusinessLogic.csproj" />
+    <ProjectReference Include="..\ServiceStationContracts\ServiceStationContracts.csproj" />
+    <ProjectReference Include="..\ServiceStationDatabaseImplement\ServiceStationDatabaseImplement.csproj" />
   </ItemGroup>
 
 </Project>

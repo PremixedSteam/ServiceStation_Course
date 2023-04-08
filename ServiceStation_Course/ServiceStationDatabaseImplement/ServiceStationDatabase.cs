@@ -4,7 +4,7 @@ using System.Diagnostics.Metrics;
 
 namespace ServiceStationDatabaseImplement
 {
-	public class STODatabase : DbContext
+	public class ServiceStationDatabase : DbContext
 	{
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

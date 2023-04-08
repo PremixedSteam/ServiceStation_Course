@@ -25,7 +25,7 @@ namespace ServiceStationView
             var services = new ServiceCollection();
             ConfigureServices(services);
             _serviceProvider = services.BuildServiceProvider();
-            System.Windows.Forms.Application.Run(_serviceProvider.GetRequiredService<Form1>());
+            Application.Run(_serviceProvider.GetRequiredService<Form1>());
         }
 
         private static void ConfigureServices(ServiceCollection services)

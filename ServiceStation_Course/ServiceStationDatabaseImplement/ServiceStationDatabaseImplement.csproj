@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\STOContracts\ServiceStationContracts.csproj" />
-    <ProjectReference Include="..\STODataModels\ServiceStationDataModels.csproj" />
+    <ProjectReference Include="..\ServiceStationContracts\ServiceStationContracts.csproj" />
+    <ProjectReference Include="..\ServiceStationDataModels\ServiceStationDataModels.csproj" />
   </ItemGroup>
 
 </Project>

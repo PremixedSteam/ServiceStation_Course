@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\STODataModels\STODataModels.csproj" />
+    <ProjectReference Include="..\ServiceStationDataModels\ServiceStationDataModels.csproj" />
   </ItemGroup>
 
 </Project>
