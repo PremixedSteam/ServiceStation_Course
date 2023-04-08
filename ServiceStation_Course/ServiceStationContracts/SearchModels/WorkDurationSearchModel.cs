@@ -1,4 +1,4 @@
-﻿using STODataModels.Models;
+﻿using ServiceStationDataModels.Models;
 
 namespace ServiceStationContracts.SearchModels
 {

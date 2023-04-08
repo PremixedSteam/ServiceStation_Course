@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace STODataModels.Models
+namespace ServiceStationDataModels.Models
 {
     public interface ISpareModel : IId
     {

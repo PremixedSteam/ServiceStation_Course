@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ServiceStationDatabaseImplement.Models;
-using System.Diagnostics.Metrics;
 
 namespace ServiceStationDatabaseImplement
 {
@@ -10,7 +9,7 @@ namespace ServiceStationDatabaseImplement
         {
             if (!optionsBuilder.IsConfigured)
             {
-				optionsBuilder.UseSqlServer(@"Data Source=SHADOWIK\SHADOWIK;Initial Catalog=STO;Integrated Security=True;TrustServerCertificate=True"); 
+				optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-QVK6NSA\SQLEXPRESS03;Initial Catalog=ServiceStation;Integrated Security=True;TrustServerCertificate=True"); 
 			}
             base.OnConfiguring(optionsBuilder);
         }

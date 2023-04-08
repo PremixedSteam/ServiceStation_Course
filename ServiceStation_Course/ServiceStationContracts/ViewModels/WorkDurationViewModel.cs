@@ -1,4 +1,4 @@
-﻿using STODataModels.Models;
+﻿using ServiceStationDataModels.Models;
 using System.ComponentModel;
 
 namespace ServiceStationContracts.ViewModels

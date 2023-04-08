@@ -1,4 +1,4 @@
-﻿namespace STODataModels.Models
+﻿namespace ServiceStationDataModels.Models
 {
     public interface IMaintenanceModel : IId
     {

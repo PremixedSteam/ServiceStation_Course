@@ -1,6 +1,6 @@
 ﻿using ServiceStationContracts.BindingModels;
 using ServiceStationContracts.ViewModels;
-using STODataModels.Models;
+using ServiceStationDataModels.Models;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

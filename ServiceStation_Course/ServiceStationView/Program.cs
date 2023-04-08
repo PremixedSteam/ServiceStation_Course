@@ -2,8 +2,6 @@ using ServiceStation;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
-using System;
-using System.Windows.Forms;
 
 namespace ServiceStationView
 {
